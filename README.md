@@ -32,4 +32,21 @@
         Successfully installed pip-23.1.2
 
 
+#### 4. Memeriksa hasil instalasi
+
+        new file:   .gitignore
+        new file:   README.md
+
+        > pip list
+        
+        Package    Version
+        ---------- -------
+        asgiref    3.6.0
+        Django     3.2.19
+        pip        23.1.2
+        pytz       2023.3
+        setuptools 56.0.0
+        sqlparse   0.4.4
+
+
 
