@@ -205,3 +205,8 @@
 
         mysql> USE django_e_shopper_multivendor;
         Database changed
+
+
+#### 20. Database - Instal MySQL driver untuk Django
+
+        > pip install mysqlclient
