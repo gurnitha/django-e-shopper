@@ -192,3 +192,16 @@
         modified:   README.md
         modified:   templates/app/main/index.html
         modified:   templates/base.html
+
+
+#### 20. Database - Create MySQL database
+
+        λ mysql -u root -p
+        Enter password: ****
+
+        ...
+        mysql> CREATE DATABASE django_e_shopper_multivendor;
+        Query OK, 1 row affected (0.04 sec)
+
+        mysql> USE django_e_shopper_multivendor;
+        Database changed
