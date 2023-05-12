@@ -61,3 +61,18 @@
         new file:   manage.py
 
 
+#### 6. Membuat django app dengan nama 'main'
+
+        > mkdir app
+        > mkdir app\main
+        > django-admin startapp main app\main
+        ...
+        new file:   app/main/__init__.py
+        new file:   app/main/admin.py
+        new file:   app/main/apps.py
+        new file:   app/main/migrations/__init__.py
+        new file:   app/main/models.py
+        new file:   app/main/tests.py
+        new file:   app/main/views.py
+
+
