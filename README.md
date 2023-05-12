@@ -511,5 +511,15 @@
 
         CRUD - Create Products model
 
+
+#### 33. CREATE - Membuat Product model
+
+        modified:   README.md
+        modified:   app/main/models.py
+        
+        NEXT:
+
+        CREATE - Add 1-M relationship Category dan Product models
+
         
 

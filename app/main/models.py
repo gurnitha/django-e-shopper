@@ -32,3 +32,18 @@ class Sub_Category(models.Model):
 		return self.name
 
 
+# MODEL: Product
+class Product(models.Model):
+	name = models.CharField(max_length=150)
+	image = models.ImageField(upload_to='uploads/images/products/')
+	price = models.IntegerField()
+	date = models.DateField(auto_now_add=True)
+
+	class Meta:
+		verbose_name = 'Product'
+		verbose_name_plural = 'Products'
+
+	def __str__(self):
+		return self.name
+
+
