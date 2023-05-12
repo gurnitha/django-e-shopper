@@ -371,3 +371,72 @@
         modified:   .gitignore
         modified:   README.md
         modified:   config/settings.py
+
+
+#### 24. Model - Membuat Category dan Sub_Category model
+
+        # MODEL: Category
+        class Category(models.Model):
+                name = models.CharField(max_length=150)
+
+
+        # MODEL: Sub_Category
+        class Sub_Category(models.Model):
+                name = models.CharField(max_length=150)
+                category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+        > python manage.py makemigrations
+        ...
+        Migrations for 'main':
+          app\main\migrations\0001_initial.py
+            - Create model Category
+            - Create model Sub_Category
+
+        > python manage.py migrate
+
+        Operations to perform:
+          Apply all migrations: admin, auth, contenttypes, main, sessions
+        Running migrations:
+          Applying main.0001_initial... OK
+
+        mysql> SHOW tables;
+        +----------------------------------------+
+        | Tables_in_django_e_shopper_multivendor |
+        +----------------------------------------+
+        | auth_group                             |
+        | auth_group_permissions                 |
+        | auth_permission                        |
+        | auth_user                              |
+        | auth_user_groups                       |
+        | auth_user_user_permissions             |
+        | django_admin_log                       |
+        | django_content_type                    |
+        | django_migrations                      |
+        | django_session                         |
+        | main_category                          |
+        | main_sub_category                      |
+        +----------------------------------------+
+        12 rows in set (0.00 sec)
+
+        mysql> DESC main_category;
+        +-------+--------------+------+-----+---------+----------------+
+        | Field | Type         | Null | Key | Default | Extra          |
+        +-------+--------------+------+-----+---------+----------------+
+        | id    | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+        | name  | varchar(150) | NO   |     | NULL    |                |
+        +-------+--------------+------+-----+---------+----------------+
+        2 rows in set (0.00 sec)
+
+        mysql> DESC main_sub_category;
+        +-------------+--------------+------+-----+---------+----------------+
+        | Field       | Type         | Null | Key | Default | Extra          |
+        +-------------+--------------+------+-----+---------+----------------+
+        | id          | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+        | name        | varchar(150) | NO   |     | NULL    |                |
+        | category_id | bigint(20)   | NO   | MUL | NULL    |                |
+        +-------------+--------------+------+-----+---------+----------------+
+        3 rows in set (0.00 sec)
+
+        modified:   README.md
+        new file:   app/main/migrations/0001_initial.py
+        modified:   app/main/models.py
