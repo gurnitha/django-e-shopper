@@ -99,3 +99,9 @@
         modified:   config/urls.py
         new file:   templates/app/main/index.html
 
+
+#### 10. Mengisi html template pada home page
+
+        modified:   README.md
+        modified:   templates/app/main/index.html
+
