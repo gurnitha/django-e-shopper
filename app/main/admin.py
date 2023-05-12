@@ -4,9 +4,9 @@
 from django.contrib import admin
 
 # Import from locals
-from app.main.models import Category, Sub_Category
+from app.main.models import Category, SubCategory
 
 # Register your models here.
 
 admin.site.register(Category)
-admin.site.register(Sub_Category)
+admin.site.register(SubCategory)

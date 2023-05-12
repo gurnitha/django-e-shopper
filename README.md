@@ -446,3 +446,10 @@
 
         modified:   README.md
         modified:   app/main/admin.py
+
+
+#### 26. Model - Menambahkan meta class pada Category dan Sub_Category model
+
+        modified:   README.md
+        modified:   app/main/admin.py
+        modified:   app/main/models.py

@@ -11,13 +11,24 @@ from django.db import models
 class Category(models.Model):
 	name = models.CharField(max_length=150)
 
+	class Meta:
+		verbose_name = 'Category'
+		verbose_name_plural = 'Categories'
+
+	def __str__(self):
+		return self.name
+
 
 # MODEL: Sub_Category
-class Sub_Category(models.Model):
+class SubCategory(models.Model):
 	name = models.CharField(max_length=150)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
+	class Meta:
+		verbose_name = 'Sub category'
+		verbose_name_plural = 'Sub categories'
 
-
+	def __str__(self):
+		return self.name
 
 
