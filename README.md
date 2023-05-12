@@ -453,3 +453,8 @@
         modified:   README.md
         modified:   app/main/admin.py
         modified:   app/main/models.py
+
+
+#### 27. Model - Meng-input category melalui admin
+
+        modified:   README.md
