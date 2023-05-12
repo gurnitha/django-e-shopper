@@ -210,3 +210,17 @@
 #### 20. Database - Instal MySQL driver untuk Django
 
         > pip install mysqlclient
+
+
+#### 21. Database - Membuat konfigurasi db pada django proyek
+
+        DATABASES = {
+            'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'xx',
+            'USER': 'xx',
+            'PASSWORD': 'xx',
+            'HOST':'localhost',
+            'PORT':'3306',
+            }
+        }
