@@ -588,3 +588,11 @@
         NEXT:
 
         Filter product by category
+
+
+#### 37. Dispaly products by Category and Sub_Category
+
+        modified:   README.md
+        modified:   app/main/views.py
+        new file:   media/uploads/images/products/girl1.jpg
+        modified:   templates/app/main/components/category_products.html
