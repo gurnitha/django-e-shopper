@@ -185,3 +185,10 @@
         new file:   templates/app/main/components/shipping.html
         modified:   templates/app/main/index.html
         modified:   templates/base.html
+
+
+#### 19. Membuat page title
+
+        modified:   README.md
+        modified:   templates/app/main/index.html
+        modified:   templates/base.html
