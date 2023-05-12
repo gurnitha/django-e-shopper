@@ -521,5 +521,52 @@
 
         CREATE - Add 1-M relationship Category dan Product models
 
+
+
+#### 34.  CREATE - Add 1-M relationship Category, Sub_Category dengan Product models
+
+        0. > pip install pillow
+        
+        1. Membuat Product model dan relationship dengan Category dan Sub_Category models
+
+        # MODEL: Product
+        class Product(models.Model):
+                category = models.ForeignKey(Category, on_delete=models.CASCADE)
+                sub_category = models.ForeignKey(Sub_Category,         on_delete=models.CASCADE)
+                name = models.CharField(max_length=150)
+                image = models.ImageField(upload_to='uploads/images/products/')
+                price = models.IntegerField()
+                date = models.DateField(auto_now_add=True)
+
+                class Meta:
+                        verbose_name = 'Product'
+                        verbose_name_plural = 'Products'
+
+                def __str__(self):
+                        return self.name
+
+        2. > python manage.py makemigrations
+
+        Migrations for 'main':
+          app\main\migrations\0002_auto_20230512_1343.py
+            - Change Meta options on category
+            - Change Meta options on sub_category
+            - Create model Product
+
+        3. > python manage.py migrate
+
+        Operations to perform:
+          Apply all migrations: admin, auth, contenttypes, main, sessions
+        Running migrations:
+          Applying main.0002_auto_20230512_1343... OK
+
+        modified:   README.md
+        new file:   app/main/migrations/0002_auto_20230512_1343.py
+        modified:   app/main/models.py
+        
+        NEXT:
+
+        Register Product model pada main/admin.py
+
         
 
