@@ -76,3 +76,11 @@
         new file:   app/main/views.py
 
 
+#### 7. Register main app pada proyek config
+
+        modified:   .gitignore
+        modified:   README.md
+        modified:   app/main/apps.py
+        modified:   config/settings.py
+
+
