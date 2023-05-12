@@ -1,6 +1,7 @@
 venv3932
 _docs
 static
+.env
 
 # LOCALS
 .env

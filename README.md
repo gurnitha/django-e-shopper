@@ -308,3 +308,66 @@
         | admin    | admin@admin.com |
         +----------+-----------------+
         1 row in set (0.00 sec)
+
+
+#### 23. Database - set up environment variables
+
+        Langkah:
+
+        1. > pip install django-environ
+
+        2. Create your .env file
+
+        3. Declare your environment variables in .env
+
+        SECRET_KEY=xxx
+        DATABASE_NAME=xxx
+        DATABASE_USER=xx
+        DATABASE_PASS=xx
+
+        4. Import environ in settings.py
+        
+        import environ
+
+        5. Initialise environ
+        # Initialise environment variables
+        env = environ.Env(
+            # set casting, default value
+            # DEBUG=(bool, False)
+            DEBUG=(bool, True)
+        )
+
+        5. Replace all references to your environment variables in settings.py
+
+        # Take environment variables from .env file
+        environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+        # Secret_key
+        SECRET_KEY = env('SECRET_KEY')
+
+        # Database
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': env('DATABASE_NAME'),
+                'USER': env('DATABASE_USER'),
+                'PASSWORD': env('DATABASE_PASS'),
+            }
+        }
+
+        6. IMPORTANT: Add your .env file to .gitignore
+
+        7. Run server for testing
+
+        System check identified no issues (0 silenced).
+        May 12, 2023 - 11:12:11
+        Django version 3.2.19, using settings 'config.settings'
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
+
+        NOTE: Perubahan files
+
+        new file:   .env.example
+        modified:   .gitignore
+        modified:   README.md
+        modified:   config/settings.py
