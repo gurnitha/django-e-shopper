@@ -596,3 +596,16 @@
         modified:   app/main/views.py
         new file:   media/uploads/images/products/girl1.jpg
         modified:   templates/app/main/components/category_products.html
+
+
+#### 38. USERAUTH - Membuat userauth app
+
+        modified:   README.md
+        new file:   app/userauth/__init__.py
+        new file:   app/userauth/admin.py
+        new file:   app/userauth/apps.py
+        new file:   app/userauth/migrations/__init__.py
+        new file:   app/userauth/models.py
+        new file:   app/userauth/tests.py
+        new file:   app/userauth/views.py
+        modified:   config/settings.py

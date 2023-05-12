@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # baru
-
+    'app.userauth.apps.UserauthConfig',
     'app.main.apps.MainConfig',
 ]
 
