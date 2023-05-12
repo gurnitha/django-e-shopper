@@ -458,3 +458,8 @@
 #### 27. Model - Meng-input category melalui admin
 
         modified:   README.md
+
+
+#### 28. Model - Meng-input sub_category melalui admin
+
+        modified:   README.md

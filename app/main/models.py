@@ -20,7 +20,7 @@ class Category(models.Model):
 
 
 # MODEL: Sub_Category
-class SubCategory(models.Model):
+class Sub_Category(models.Model):
 	name = models.CharField(max_length=150)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
