@@ -20,11 +20,9 @@
 									<div class="panel-body">
 
 										<ul>
-											<li><a href="#">Nike </a></li>
-											<li><a href="#">Under Armour </a></li>
-											<li><a href="#">Adidas </a></li>
-											<li><a href="#">Puma</a></li>
-											<li><a href="#">ASICS </a></li>
+											{% for subcat in cat.sub_category_set.all %}
+											<li><a href="#">{{subcat.name}} </a></li>
+											{% endfor %}
 										</ul>
 
 									</div>

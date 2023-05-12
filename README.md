@@ -480,3 +480,20 @@
 
         #### 30. READ - Load and display sub_categories
 
+
+#### 30. READ - Load and display sub_categories
+
+        modified:   README.md
+        modified:   templates/app/main/components/category_products.html
+
+        NOTE:
+
+        1. Sukses display categories
+        2. Sukses display sub_category
+
+        NEXT:
+
+        #### 31. Membuat link dropdown bekerja
+
+        
+
