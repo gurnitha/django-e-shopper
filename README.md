@@ -640,3 +640,9 @@
         NOTE:
 
         User baru sukses signup
+
+
+#### 43. USERAUTH - Show or hide login and logout menu
+
+        modified:   README.md
+        modified:   templates/partials/_header.html
