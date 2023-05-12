@@ -105,3 +105,9 @@
         modified:   README.md
         modified:   templates/app/main/index.html
 
+
+#### 11. Mengisi assets (css,js,images,fonts)
+
+        modified:   .gitignore
+        modified:   README.md
+
