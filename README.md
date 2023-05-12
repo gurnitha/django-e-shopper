@@ -624,3 +624,9 @@
         modified:   app/userauth/views.py
         modified:   config/urls.py
         new file:   templates/app/userauth/registration/signup.html
+
+
+#### 41. USERAUTH - Membuat logik pada signup_page
+
+        modified:   README.md
+        modified:   app/userauth/views.py
