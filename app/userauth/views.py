@@ -27,3 +27,7 @@ def signup_page(request):
 
 	context = {'form':form}
 	return render(request, 'app/userauth/registration/signup.html', context)
+
+
+def signin_page(request):
+	return render(request, 'registration/login.html')

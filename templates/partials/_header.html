@@ -71,9 +71,9 @@
 								
 								<!-- show/hide: login or logout menu -->
 								{% if user.is_authenticated %}
-								<li><a href="login.html"><i class="fa fa-lock"></i> Logout</a></li>
+								<li><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
 								{% else %}
-								<li><a href="{% url 'userauth:signup_page' %}"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="accounts{% url 'userauth:signin_page' %}"><i class="fa fa-lock"></i> Login</a></li>
 								{% endif %}
 
 							</ul>

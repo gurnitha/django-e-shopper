@@ -646,3 +646,24 @@
 
         modified:   README.md
         modified:   templates/partials/_header.html
+
+
+#### 43. USERAUTH - Login
+
+        modified:   README.md
+        modified:   app/userauth/models.py
+        modified:   app/userauth/urls.py
+        modified:   app/userauth/views.py
+        modified:   config/urls.py
+        modified:   templates/app/userauth/registration/signup.html
+        modified:   templates/partials/_header.html
+        new file:   templates/registration/login.html
+
+        NOTE:
+
+        1. Attribute form login come from here config/urls.py:
+         path('accounts/', include('django.contrib.auth.urls')),
+
+        2. When logged in, automatically redirect to: accounts/profile
+
+        3. But it still needs: views method, and urls

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Signup{% endblock title %}
+{% block title %}Login{% endblock title %}
 {% load static %}
 
 
@@ -9,19 +9,16 @@
 	<div class="container">
 		<div class="col-sm-4 col-sm-offset-1">
 			<div class="signup-form">
-				<h2>Sign up</h2>
+				<h2>Login</h2>
 				<form method="post">
 					{% csrf_token %}
 					{% for field in form %}
 					{{ field.errors }}
+					<label>{{field.label_tag}}</label>
 					<p>{{ field }}</p>
 					{% endfor %}
 
-					<button class="btn btn-default">Signup</button>
-					<span style="float:right;">Already have an account?
-						<a href="{% url 'userauth:signin_page' %}">Log In</a>
-					</span>
-					
+					<button class="btn btn-default">Login</button>
 				</form>
 					
 			</div>

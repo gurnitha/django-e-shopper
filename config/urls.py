@@ -25,7 +25,8 @@ urlpatterns = [
     path('', include('app.main.urls')),
 
     # userauth
-    path('signup', include('app.userauth.urls')),
+    path('', include('app.userauth.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:
