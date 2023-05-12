@@ -84,3 +84,9 @@
         modified:   config/settings.py
 
 
+#### 8. Menjalankan django lokal server dan menampilkan django pada web browser
+
+        > python manage.py runserver
+        > http://127.0.0.1:8000/
+
+
