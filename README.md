@@ -463,3 +463,20 @@
 #### 28. Model - Meng-input sub_category melalui admin
 
         modified:   README.md
+
+
+#### 29. READ - Load and display categories
+
+        modified:   README.md
+        modified:   app/main/views.py
+        modified:   templates/app/main/components/category_products.html
+
+        NOTE:
+
+        1. Sukses display categories
+        2. Link tidak bekerja
+
+        NEXT:
+
+        #### 30. READ - Load and display sub_categories
+
