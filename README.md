@@ -152,3 +152,9 @@
         modified:   README.md
         modified:   templates/app/main/index.html
         new file:   templates/base.html
+
+
+#### 16. Meng-extends base.html ke index.html
+
+        modified:   README.md
+        modified:   templates/app/main/index.html
