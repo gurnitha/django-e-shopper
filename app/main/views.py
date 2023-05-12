@@ -10,7 +10,9 @@ from app.main import models
 
 def home_page(request):
 	categories = models.Category.objects.all()
+	products = models.Product.objects.all()
 	context = {
 		'categories':categories,
+		'products':products,
 	}
 	return render(request, 'app/main/index.html', context)

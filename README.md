@@ -573,3 +573,18 @@
 
         modified:   README.md
         modified:   app/main/admin.py
+
+
+#### 36. Add, load and display products as feature products
+
+        modified:   README.md
+        modified:   app/main/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        ...
+        new file:   uploads/images/products/product5.jpg
+        new file:   uploads/images/products/product6.jpg
+
+        NEXT:
+
+        Filter product by category
