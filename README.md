@@ -10,3 +10,15 @@
 
         > python -m venv venv3932
 
+
+
+#### 2. Menginstall django v3.2
+
+        new file:   .gitignore
+        new file:   README.md
+
+        > venv3932\Scripts\activate
+        > pip install django==3.2.*
+        ...
+         Downloading Django-3.2.19-py3-none-any.whl (7.9 MB)
+
