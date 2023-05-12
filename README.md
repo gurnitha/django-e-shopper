@@ -158,3 +158,15 @@
 
         modified:   README.md
         modified:   templates/app/main/index.html
+
+
+#### 17. Men-sagmentasi base.html template dan template inheritance
+
+        modified:   README.md
+        new file:   templates/app/main/components/content.html
+        new file:   templates/app/main/components/slider.html
+        modified:   templates/app/main/index.html
+        modified:   templates/base.html
+        new file:   templates/partials/_footer.html
+        new file:   templates/partials/_header.html
+        new file:   templates/partials/_scripts.html
