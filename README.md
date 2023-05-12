@@ -170,3 +170,18 @@
         new file:   templates/partials/_footer.html
         new file:   templates/partials/_header.html
         new file:   templates/partials/_scripts.html
+
+
+#### 18. Men-sagmentasi content index.html
+
+        modified:   README.md
+        new file:   templates/app/main/components/brands_products.html
+        new file:   templates/app/main/components/category_products.html
+        new file:   templates/app/main/components/category_tab.html
+        deleted:    templates/app/main/components/content.html
+        new file:   templates/app/main/components/features_items.html
+        new file:   templates/app/main/components/price_range.html
+        new file:   templates/app/main/components/recommended_items.html
+        new file:   templates/app/main/components/shipping.html
+        modified:   templates/app/main/index.html
+        modified:   templates/base.html

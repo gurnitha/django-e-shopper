@@ -9,6 +9,48 @@
 
 {% block content %} 
 
-	{% include './components/content.html' %}
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+
+						<!--category_products-->
+						{% include './components/category_products.html' %}
+						<!--end: category_products-->
+					
+						<!--brands_products-->
+						{% include './components/brands_products.html' %}
+						<!--end: brands_products-->
+
+						<!--price_range-->
+						{% include './components/price_range.html' %}
+						<!--end: price_range-->
+
+						<!--shipping-->
+						{% include './components/shipping.html' %}
+						<!--end: shipping-->
+					
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+
+					<!--features_items-->
+					{% include './components/features_items.html' %}
+					<!--end: features_items-->
+
+					<!--category_tab-->
+					{% include './components/category_tab.html' %}
+					<!--end: category_tab-->
+
+					<!--recommended_items-->
+					{% include './components/recommended_items.html' %}
+					<!--end: recommended_items-->
+					
+				</div>
+			</div>
+		</div>
+	</section>
 
 {% endblock content %}
