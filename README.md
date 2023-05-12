@@ -99,6 +99,8 @@
         modified:   config/urls.py
         new file:   templates/app/main/index.html
 
+        : 'DIRS': ['templates'],
+
 
 #### 10. Mengisi html template pada home page
 
@@ -110,4 +112,18 @@
 
         modified:   .gitignore
         modified:   README.md
+
+        : static
+
+
+#### 12. Membuat path untuk static_root dan staticfiles_dir
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        : STATIC_URL  = '/static/'
+        : STATIC_ROOT = '/static/'
+        : STATICFILES_DIRS = [
+        	os.path.join(BASE_DIR, 'static')
+          ]
 
