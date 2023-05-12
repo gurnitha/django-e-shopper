@@ -440,3 +440,9 @@
         modified:   README.md
         new file:   app/main/migrations/0001_initial.py
         modified:   app/main/models.py
+
+
+#### 25. Model - Register Category dan Sub_Category model pada main/admin.py
+
+        modified:   README.md
+        modified:   app/main/admin.py
