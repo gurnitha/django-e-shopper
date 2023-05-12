@@ -90,3 +90,12 @@
         > http://127.0.0.1:8000/
 
 
+#### 9. Membuat halo world
+
+        modified:   README.md
+        new file:   app/main/urls.py
+        modified:   app/main/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/app/main/index.html
+
