@@ -495,5 +495,21 @@
 
         #### 31. Membuat link dropdown bekerja
 
+
+#### 31. READ - Membuat link dropdown bekerja
+
+        modified:   README.md
+        modified:   templates/app/main/components/category_products.html
+
+        NOTE:
+
+        1. Sukses display categories
+        2. Sukses display sub_category
+        3. Klik dropdown bekerja
+
+        NEXT:
+
+        CRUD - Create Products model
+
         
 
