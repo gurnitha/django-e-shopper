@@ -49,4 +49,15 @@
         sqlparse   0.4.4
 
 
+#### 5. Membuat django proyek dengan nama'config'
+
+        > django-admin startproject config .
+        ...
+        new file:   config/__init__.py
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
+
 
