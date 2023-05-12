@@ -127,3 +127,21 @@
         	os.path.join(BASE_DIR, 'static')
           ]
 
+
+#### 13. Loding static files
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        : STATIC_URL  = '/static/'
+        : STATIC_ROOT = '/static/'
+        : STATICFILES_DIRS = [
+        	os.path.join(BASE_DIR, 'static')
+          ]
+
+
+#### 14. Membuat base.html file
+
+        modified:   README.md
+        modified:   templates/app/main/index.html
+        new file:   templates/base.html
