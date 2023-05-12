@@ -630,3 +630,13 @@
 
         modified:   README.md
         modified:   app/userauth/views.py
+
+
+#### 42. USERAUTH - Membuat signup form: part 2 - membuat form field untuk signup
+
+        modified:   README.md
+        modified:   templates/app/userauth/registration/signup.html
+
+        NOTE:
+
+        User baru sukses signup
