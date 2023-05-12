@@ -145,3 +145,10 @@
         modified:   README.md
         modified:   templates/app/main/index.html
         new file:   templates/base.html
+
+
+#### 15. Memindahkan html template dari index.html ke base.html
+
+        modified:   README.md
+        modified:   templates/app/main/index.html
+        new file:   templates/base.html
