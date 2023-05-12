@@ -22,7 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # main
-    path('', include('app.main.urls'))
+    path('', include('app.main.urls')),
+
+    # userauth
+    path('signup', include('app.userauth.urls')),
 ]
 
 if settings.DEBUG:

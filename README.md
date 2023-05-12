@@ -609,3 +609,18 @@
         new file:   app/userauth/tests.py
         new file:   app/userauth/views.py
         modified:   config/settings.py
+
+
+#### 39. USERAUTH - Membuat UserCreationForm model
+
+        modified:   README.md
+        modified:   app/userauth/models.py
+
+
+#### 40. USERAUTH - Membuat signup form: part 1
+
+        modified:   README.md
+        new file:   app/userauth/urls.py
+        modified:   app/userauth/views.py
+        modified:   config/urls.py
+        new file:   templates/app/userauth/registration/signup.html
