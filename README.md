@@ -568,5 +568,8 @@
 
         Register Product model pada main/admin.py
 
-        
 
+#### 35. Register Product model pada main/admin.py
+
+        modified:   README.md
+        modified:   app/main/admin.py
