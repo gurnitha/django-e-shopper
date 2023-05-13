@@ -701,3 +701,17 @@
 
         modified:   README.md
         modified:   templates/partials/_header.html
+
+
+#### 47. USERAUTH - Password reset 
+
+        modified:   README.md
+        modified:   templates/registration/login.html
+        new file:   templates/registration/password_reset_complete.html
+        new file:   templates/registration/password_reset_confirm.html
+        new file:   templates/registration/password_reset_done.html
+        new file:   templates/registration/password_reset_form.html
+
+        NEXT:
+
+        Setup smtp
