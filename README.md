@@ -667,3 +667,10 @@
         2. When logged in, automatically redirect to: accounts/profile
 
         3. But it still needs: views method, and urls
+
+
+#### 44. USERAUTH - Redirect to home page after logging in
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   templates/partials/_header.html
