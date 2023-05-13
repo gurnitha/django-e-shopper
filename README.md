@@ -744,3 +744,23 @@
         modified:   app/main/views.py
         new file:   templates/app/cart/cart_detail.html
         modified:   templates/app/main/components/features_items.html
+
+
+#### 51. SHOPPING CART - Add functionalities to cart_detail
+
+        modified:   README.md
+        modified:   app/main/views.py
+        modified:   templates/app/cart/cart_detail.html
+        modified:   templates/partials/_header.html
+
+        NOTE:
+
+        1. Jika user yg tdk login mencoba 'add to cart', maka
+           terjadi error: PAGE NOT FOUND denga url spt dibawah ini: 
+           http://127.0.0.1:8000/users/login?next=/cart/add/1/
+
+        2. Jika user ingin berbelanja, maka di harus login
+           telebih dahulu kalau sdh memiliki akun.
+
+        3. Jika user belum memiliki akun dan ingin berbelanja,
+           maka dia harus signup dulu.
