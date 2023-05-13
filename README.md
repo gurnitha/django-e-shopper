@@ -724,3 +724,16 @@
         NOTE:
 
         Did not work (Saya belum faham)
+
+
+#### 49. SHOPPING CART - Setup shopping cart
+
+        > pip install django-shopping-cart
+
+        modified:   README.md
+        modified:   app/main/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+
+        Source: https://codeingex.blogspot.com/2021/08/python-django-in-create-add-to-cart.html
+
