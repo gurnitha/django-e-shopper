@@ -73,7 +73,7 @@
 								{% if user.is_authenticated %}
 								<li><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
 								{% else %}
-								<li><a href="accounts{% url 'userauth:signin_page' %}"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="{% url 'login' %}"><i class="fa fa-lock"></i> Login</a></li>
 								{% endif %}
 
 							</ul>

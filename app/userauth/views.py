@@ -9,7 +9,7 @@ from app.userauth import models
 
 # Create your views here.
 
-def signup_page(request):
+def signup(request):
 	if request.method == 'POST':
 		form = models.UserCreationForm(request.POST)
 		if form.is_valid():
@@ -26,8 +26,8 @@ def signup_page(request):
 		form = models.UserCreationForm()
 
 	context = {'form':form}
-	return render(request, 'app/userauth/registration/signup.html', context)
+	return render(request, 'registration/signup.html', context)
 
 
-def signin_page(request):
+def login(request):
 	return render(request, 'registration/login.html')

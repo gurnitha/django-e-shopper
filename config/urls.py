@@ -18,6 +18,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include  
 
+from app.userauth import views   
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -25,7 +27,8 @@ urlpatterns = [
     path('', include('app.main.urls')),
 
     # userauth
-    path('', include('app.userauth.urls')),
+    # path('', include('app.userauth.urls')),
+    path('signup/', views.signup, name='signup'),
     path('accounts/', include('django.contrib.auth.urls')),
 ]
 

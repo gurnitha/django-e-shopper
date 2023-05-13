@@ -674,3 +674,24 @@
         modified:   README.md
         modified:   config/settings.py
         modified:   templates/partials/_header.html
+
+
+#### 45. USERAUTH - Mendefinisikan ulang path signup dan login
+
+        new file:   app/userauth/_urls.py
+        deleted:    app/userauth/urls.py
+        modified:   app/userauth/views.py
+        modified:   config/urls.py
+        modified:   templates/partials/_header.html
+        modified:   templates/registration/login.html
+        renamed:    templates/app/userauth/registration/signup.html -> templates/registration/signup.html
+
+        NOTE:
+
+        Links yang dibetulkan:
+
+        1. Login pada navbar
+        2. Login pada signup form
+        3. Signup pada login form
+
+        Tested :)
