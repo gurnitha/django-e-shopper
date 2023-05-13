@@ -172,5 +172,22 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # New
 
+# Setting up SMTP Server
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'ingafter63@gmail.com'
+# EMAIL_HOST_PASSWORD = 'makeitoverGmail~`60'
+
+
+# Bottom of the file
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ingafter63@gmail.com'
+EMAIL_HOST_PASSWORD = 'makeitoverGmail~`60'
+
+
+# Redirect
 LOGIN_REDIRECT_URL = 'main:home_page'
 LOGOUT_REDIRECT_URL = 'main:home_page'

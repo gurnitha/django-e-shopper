@@ -715,3 +715,12 @@
         NEXT:
 
         Setup smtp
+
+
+#### 48. USERAUTH - Setup smtp server 
+
+        modified:   config/settings.py
+
+        NOTE:
+
+        Did not work (Saya belum faham)
