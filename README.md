@@ -764,3 +764,9 @@
 
         3. Jika user belum memiliki akun dan ingin berbelanja,
            maka dia harus signup dulu.
+
+
+#### 52. SHOPPING CART - Melindungi cart dari un-logged in user
+
+        modified:   README.md
+        modified:   app/main/views.py
