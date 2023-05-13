@@ -695,3 +695,9 @@
         3. Signup pada login form
 
         Tested :)
+
+
+#### 46. USERAUTH - Logout 
+
+        modified:   README.md
+        modified:   templates/partials/_header.html
