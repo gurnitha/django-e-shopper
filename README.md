@@ -737,3 +737,10 @@
 
         Source: https://codeingex.blogspot.com/2021/08/python-django-in-create-add-to-cart.html
 
+
+#### 50. SHOPPING CART - Membuat laman cart_detail
+
+        modified:   README.md
+        modified:   app/main/views.py
+        new file:   templates/app/cart/cart_detail.html
+        modified:   templates/app/main/components/features_items.html

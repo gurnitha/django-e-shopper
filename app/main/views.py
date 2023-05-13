@@ -46,7 +46,7 @@ def cart_add(request, id):
 	cart = Cart(request)
 	product = Product.objects.get(id=id)
 	cart.add(product=product)
-	return redirect("home")
+	return redirect("main:home_page")
 
 
 @login_required(login_url="/users/login")
@@ -82,4 +82,4 @@ def cart_clear(request):
 
 @login_required(login_url="/users/login")
 def cart_detail(request):
-	return render(request, 'cart/cart_detail.html')
+	return render(request, 'app/cart/cart_detail.html')

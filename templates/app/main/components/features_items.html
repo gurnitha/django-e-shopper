@@ -4,21 +4,21 @@
 					<div class="features_items">
 						<h2 class="title text-center">Features Items</h2>
 						{% if products %}
-						{% for p in products %}
+						{% for product in products %}
 						<div class="col-sm-4">
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="{{p.image.url}}" alt="" />
-											<h2>${{p.price}}</h2>
-											<p>{{p.name}}</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<img src="{{product.image.url}}" alt="" />
+											<h2>${{product.price}}</h2>
+											<p>{{product.name}}</p>
+											<a href="{% url 'cart_add' product.id %}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
-												<h2>${{p.price}}</h2>
-												<p>{{p.name}}</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<h2>${{product.price}}</h2>
+												<p>{{product.name}}</p>
+												<a href="{% url 'cart_add' product.id %}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 								</div>
