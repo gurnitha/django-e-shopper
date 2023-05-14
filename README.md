@@ -982,3 +982,122 @@
         modified:   config/settings.py
 
         6. Testing dan berhasil :)
+
+
+#### 62. ORDER - Membuat Order model
+
+        Aktifitas:
+
+        1. Membuat Order model
+
+        from django.db import models
+        from django.contrib.auth.models import User 
+        import datetime 
+
+        # Import from locals
+        from app.main.models import Product  
+
+        # Create your models here.
+
+        # MODEL: Order
+        class Order(models.Model):
+                product = models.ForeignKey(Product, on_delete=models.CASCADE)
+                image = models.ImageField(upload_to='uploads/order/images/')
+                user = models.ForeignKey(User, on_delete=models.CASCADE)
+                quantity = models.CharField(max_length=5)
+                price = models.IntegerField()
+                address = models.TextField()
+                phone = models.CharField(max_length=15)
+                pincode = models.CharField(max_length=10)
+                date = models.DateField(default=datetime.datetime.today)
+
+                class Meta:
+                        verbose_name = 'Order'
+                        verbose_name_plural = 'Orders'
+
+                def __str__(self):
+                        return self.product
+
+        2. Menjalankan perintah migrasi
+
+        (venv3932) hp@ING:~$ python manage.py makemigrations
+        Migrations for 'order':
+          app\order\migrations\0001_initial.py
+            - Create model Order
+
+        (venv3932) hp@ING:~$ python manage.py migrate
+        Operations to perform:
+          Apply all migrations: admin, auth, contact, contenttypes, main, order, sessions
+        Running migrations:
+          Applying order.0001_initial... OK
+
+        3. Memeriksa hasil migrasi
+
+        mysql> SHOW tables;
+        +----------------------------------------+
+        | Tables_in_django_e_shopper_multivendor |
+        +----------------------------------------+
+        | auth_group                             |
+        | auth_group_permissions                 |
+        | auth_permission                        |
+        | auth_user                              |
+        | auth_user_groups                       |
+        | auth_user_user_permissions             |
+        | contact_contact                        |
+        | django_admin_log                       |
+        | django_content_type                    |
+        | django_migrations                      |
+        | django_session                         |
+        | main_category                          |
+        | main_product                           |
+        | main_sub_category                      |
+        | order_order                            |
+        +----------------------------------------+
+        15 rows in set (0.00 sec)
+
+        mysql> DESC order_order;
+        +------------+--------------+------+-----+---------+----------------+
+        | Field      | Type         | Null | Key | Default | Extra          |
+        +------------+--------------+------+-----+---------+----------------+
+        | id         | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+        | image      | varchar(100) | NO   |     | NULL    |                |
+        | quantity   | varchar(5)   | NO   |     | NULL    |                |
+        | price      | int(11)      | NO   |     | NULL    |                |
+        | address    | longtext     | NO   |     | NULL    |                |
+        | phone      | varchar(15)  | NO   |     | NULL    |                |
+        | pincode    | varchar(10)  | NO   |     | NULL    |                |
+        | date       | date         | NO   |     | NULL    |                |
+        | product_id | bigint(20)   | NO   | MUL | NULL    |                |
+        | user_id    | int(11)      | NO   | MUL | NULL    |                |
+        +------------+--------------+------+-----+---------+----------------+
+        10 rows in set (0.00 sec)
+
+        4. Register Order model pada order/admin.py
+
+        # app/order/admin.py
+
+        # Import django modules & third parties
+        from django.contrib import admin
+
+        # Import from locals
+        from app.order.models import Order
+
+        # Register your models here.
+
+        admin.site.register(Order)
+
+        5. Testing dan berhasil :)
+
+        6. Perubahan files
+
+        modified:   README.md
+        new file:   app/order/migrations/0001_initial.py
+        modified:   app/order/models.py
+
+
+
+
+
+
+
+
