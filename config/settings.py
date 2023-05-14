@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'app.userauth.apps.UserauthConfig',
     'app.main.apps.MainConfig',
     'app.contact.apps.ContactConfig',
+    'app.order.apps.OrderConfig',
 ]
 
 CART_SESSION_ID = 'cart'

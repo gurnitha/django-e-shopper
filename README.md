@@ -950,3 +950,35 @@
         2. Testing
 
         3. Hasil :)
+
+
+#### 61. ORDER - Membuat app 'app/order'
+
+        Aktifitas:
+
+        1. Membuat dir baru app/order
+        > mkdir app\order
+
+        2. Membuat app order
+        >  django-admin startapp order app\order
+
+        3. Modifikasi file apps.py
+        dari : name = 'order'
+        menjadi: name = 'app.order'
+
+        4. Meregistrasi app order pada config/settings.py
+        'app.order.apps.OrderConfig',
+
+        5. Perubahan files
+
+        modified:   README.md
+        new file:   app/order/__init__.py
+        new file:   app/order/admin.py
+        new file:   app/order/apps.py
+        new file:   app/order/migrations/__init__.py
+        new file:   app/order/models.py
+        new file:   app/order/tests.py
+        new file:   app/order/views.py
+        modified:   config/settings.py
+
+        6. Testing dan berhasil :)
