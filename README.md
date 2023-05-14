@@ -935,3 +935,18 @@
         modified:   README.md
         modified:   app/contact/views.py
         modified:   templates/app/contact/contact.html
+
+
+#### 60. CONTACT - Add link contact dengan menu navigasi
+
+        Aktifitas:
+
+        1. Membuat link
+
+        modified:   README.md
+        modified:   templates/partials/_footer.html
+        modified:   templates/partials/_header.html
+
+        2. Testing
+
+        3. Hasil :)
