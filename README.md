@@ -1095,9 +1095,35 @@
         modified:   app/order/models.py
 
 
+#### 62. ORDER - Fixing issue
+
+        Aktifitas:
+
+        1. Jenis issue
+
+        TypeError at /admin/order/order/add/
+        __str__ returned non-string (type Product)
+
+        2. Fixing issue:
+
+        BEFORE pada Order model:
+
+        def __str__(self):
+                        return self.product 
 
 
+        AFTER pada Order model:
 
+        def __str__(self):
+                        return self.product.name
 
+        3. Testing: add order dari admin dashboard
 
+        4. Hasil: berhasil :)
 
+        5. Perubahan files
+
+        modified:   README.md
+        modified:   app/order/models.py
+        new file:   media/uploads/order/images/product6.jpg
+        new file:   media/uploads/order/images/product6_L9Du4Ns.jpg
