@@ -806,3 +806,93 @@
 #### 57. CONTACT - Add address
 
         new file:   templates/app/contact/contact.html
+
+
+#### 58. CONTACT - Membuat Contact model
+
+        Aktifitas:
+
+        1. Membuat Contact model
+
+        # MODEL: Contact
+        class Contact(models.Model):
+                name = models.CharField(max_length=150)
+                email = models.EmailField(max_length=150)
+                subject = models.CharField(max_length=150)
+                message = models.TextField()
+
+                class Meta:
+                        verbose_name = 'Contact'
+                        verbose_name_plural = 'Contacts'
+
+                def __str__(self):
+                        return self.name
+
+        2. Menjalan perintah migrasi
+
+        > (venv3932) hp@ING:~$ python manage.py makemigrations
+        Migrations for 'contact':
+          app\contact\migrations\0001_initial.py
+            - Create model Contact
+
+        > (venv3932) hp@ING:~$ python manage.py migrate
+        Operations to perform:
+          Apply all migrations: admin, auth, contact, contenttypes, main, sessions
+        Running migrations:
+          Applying contact.0001_initial... OK
+
+        3. Memeriksa hasil migrasi
+
+        mysql> SHOW tables;
+        +----------------------------------------+
+        | Tables_in_django_e_shopper_multivendor |
+        +----------------------------------------+
+        | auth_group                             |
+        | auth_group_permissions                 |
+        | auth_permission                        |
+        | auth_user                              |
+        | auth_user_groups                       |
+        | auth_user_user_permissions             |
+        | contact_contact                        |
+        | django_admin_log                       |
+        | django_content_type                    |
+        | django_migrations                      |
+        | django_session                         |
+        | main_category                          |
+        | main_product                           |
+        | main_sub_category                      |
+        +----------------------------------------+
+        14 rows in set (0.00 sec)
+
+        mysql> DESC contact_contact;
+        +---------+--------------+------+-----+---------+----------------+
+        | Field   | Type         | Null | Key | Default | Extra          |
+        +---------+--------------+------+-----+---------+----------------+
+        | id      | bigint(20)   | NO   | PRI | NULL    | auto_increment |
+        | name    | varchar(150) | NO   |     | NULL    |                |
+        | email   | varchar(150) | NO   |     | NULL    |                |
+        | subject | varchar(150) | NO   |     | NULL    |                |
+        | message | longtext     | NO   |     | NULL    |                |
+        +---------+--------------+------+-----+---------+----------------+
+        5 rows in set (0.00 sec)
+
+        4. Register Contact model to contact/admin.py
+
+        # app/contact/admin.py
+
+        # Import django modules & third parties
+        from django.contrib import admin
+
+        # Import from locals
+        from app.contact.models import Contact
+
+        # Register your models here.
+
+        admin.site.register(Contact)
+
+        5. Perubahan files
+        
+        modified:   README.md
+        modified:   app/contact/admin.py
+        new file:   app/contact/migrations/0001_initial.py
+        modified:   app/contact/models.py
