@@ -791,3 +791,8 @@
         modified:   app/contact/views.py
         modified:   config/urls.py
         new file:   templates/app/contact/contact.html
+
+
+#### 55 CONTACT - Add html template pada laman contact
+
+        new file:   templates/app/contact/contact.html
