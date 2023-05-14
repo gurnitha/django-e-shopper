@@ -796,3 +796,8 @@
 #### 55 CONTACT - Add html template pada laman contact
 
         new file:   templates/app/contact/contact.html
+
+
+#### 56 CONTACT - Add Google Map pada laman contact
+
+        new file:   templates/app/contact/contact.html
