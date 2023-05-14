@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     # baru
     'app.userauth.apps.UserauthConfig',
     'app.main.apps.MainConfig',
+    'app.contact.apps.ContactConfig',
 ]
 
 CART_SESSION_ID = 'cart'

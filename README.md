@@ -770,3 +770,16 @@
 
         modified:   README.md
         modified:   app/main/views.py
+
+
+#### 53 CONTACT - Create app 'app/contact'
+
+        modified:   README.md
+        new file:   app/contact/__init__.py
+        new file:   app/contact/admin.py
+        new file:   app/contact/apps.py
+        new file:   app/contact/migrations/__init__.py
+        new file:   app/contact/models.py
+        new file:   app/contact/tests.py
+        new file:   app/contact/views.py
+        modified:   config/settings.py
