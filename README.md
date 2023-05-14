@@ -772,7 +772,7 @@
         modified:   app/main/views.py
 
 
-#### 53 CONTACT - Create app 'app/contact'
+#### 53. CONTACT - Create app 'app/contact'
 
         modified:   README.md
         new file:   app/contact/__init__.py
@@ -785,7 +785,7 @@
         modified:   config/settings.py
 
 
-#### 54 CONTACT - Create laman contact
+#### 54. CONTACT - Create laman contact
 
         new file:   app/contact/urls.py
         modified:   app/contact/views.py
@@ -793,11 +793,16 @@
         new file:   templates/app/contact/contact.html
 
 
-#### 55 CONTACT - Add html template pada laman contact
+#### 55. CONTACT - Add html template pada laman contact
 
         new file:   templates/app/contact/contact.html
 
 
-#### 56 CONTACT - Add Google Map pada laman contact
+#### 56. CONTACT - Add Google Map pada laman contact
+
+        new file:   templates/app/contact/contact.html
+
+
+#### 57. CONTACT - Add address
 
         new file:   templates/app/contact/contact.html
