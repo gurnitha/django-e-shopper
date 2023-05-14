@@ -891,8 +891,47 @@
         admin.site.register(Contact)
 
         5. Perubahan files
-        
+
         modified:   README.md
         modified:   app/contact/admin.py
         new file:   app/contact/migrations/0001_initial.py
         modified:   app/contact/models.py
+
+
+#### 59. CONTACT - Membuat logik pada Contact method dan testing
+
+        Aktifitas:
+
+        1. Membuat logik
+
+        # Import from locals
+        from app.contact import models
+        # Create your views here.
+
+        def contact_page(request):
+                
+                if request.method == 'POST':
+                        contact = models.Contact(
+                                name = request.POST.get('name'),
+                                email = request.POST.get('email'),
+                                subject = request.POST.get('subject'),
+                                message = request.POST.get('message'),
+                        )
+
+                        contact.save()
+
+                return render(request, 'app/contact/contact.html')
+
+        2. Menambahkan csrf token pada form
+
+        {% csrf_token %}
+
+        3. Testing: Mengirim pesan
+
+        4. Hasil testing :)
+
+        5. Perubhan files
+
+        modified:   README.md
+        modified:   app/contact/views.py
+        modified:   templates/app/contact/contact.html
