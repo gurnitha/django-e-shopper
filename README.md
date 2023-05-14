@@ -783,3 +783,11 @@
         new file:   app/contact/tests.py
         new file:   app/contact/views.py
         modified:   config/settings.py
+
+
+#### 54 CONTACT - Create laman contact
+
+        new file:   app/contact/urls.py
+        modified:   app/contact/views.py
+        modified:   config/urls.py
+        new file:   templates/app/contact/contact.html

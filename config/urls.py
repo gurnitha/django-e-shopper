@@ -33,6 +33,9 @@ urlpatterns = [
     path('signup/', userauth_views.signup, name='signup'),
     path('accounts/', include('django.contrib.auth.urls')),
 
+    # contact
+    path('', include('app.contact.urls')),
+
     # Shopping cart
     path('cart/add/<int:id>/', views.cart_add, name='cart_add'),
     path('cart/item_clear/<int:id>/', views.item_clear, name='item_clear'),
