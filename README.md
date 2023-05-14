@@ -3,7 +3,7 @@
 [Submber:](https://www.youtube.com/@CodingEx)
 
 
-#### 1. Membuat virtual environment
+#### [1. Membuat virtual environment](https://github.com/gurnitha/django-e-shopper/commit/dc67501a10d6261e4a37db28876e143c72e031c4)
 
         new file:   .gitignore
         new file:   README.md
@@ -11,7 +11,7 @@
         > python -m venv venv3932
 
 
-#### 2. Menginstall django v3.2
+#### [2. Menginstall django v3.2](https://github.com/gurnitha/django-e-shopper/commit/2e356052889fb329c170374defad4e3b453ba327)
 
         new file:   .gitignore
         new file:   README.md
@@ -22,7 +22,7 @@
          Downloading Django-3.2.19-py3-none-any.whl (7.9 MB)
 
 
-#### 3. Meng-upgrade pip
+#### [3. Meng-upgrade pip](https://github.com/gurnitha/django-e-shopper/commit/907d553fcb177854d2ff42941245c4e6a330eafa)
 
         new file:   .gitignore
         new file:   README.md
@@ -32,7 +32,7 @@
         Successfully installed pip-23.1.2
 
 
-#### 4. Memeriksa hasil instalasi
+#### [4. Memeriksa hasil instalasi](https://github.com/gurnitha/django-e-shopper/commit/2ec83b8cdf66c4eae7b2cfa7c5abf2c5e5618374)
 
         new file:   .gitignore
         new file:   README.md
@@ -49,7 +49,7 @@
         sqlparse   0.4.4
 
 
-#### 5. Membuat django proyek dengan nama'config'
+#### [5. Membuat django proyek dengan nama'config'](https://github.com/gurnitha/django-e-shopper/commit/ee5fafeb12130dd5cde60d402c221673fe05d66a)
 
         > django-admin startproject config .
         ...
@@ -61,7 +61,7 @@
         new file:   manage.py
 
 
-#### 6. Membuat django app dengan nama 'main'
+#### [6. Membuat django app dengan nama 'main'](https://github.com/gurnitha/django-e-shopper/commit/76ebaf67109ffda3b65bb94945dd1ffa02b55757)
 
         > mkdir app
         > mkdir app\main
@@ -76,7 +76,7 @@
         new file:   app/main/views.py
 
 
-#### 7. Register main app pada proyek config
+#### [7. Register main app pada proyek config](https://github.com/gurnitha/django-e-shopper/commit/1f309f625d8d7d0601f42c9fee364dacd97541aa)
 
         modified:   .gitignore
         modified:   README.md
@@ -84,13 +84,13 @@
         modified:   config/settings.py
 
 
-#### 8. Menjalankan django lokal server dan menampilkan django pada web browser
+#### [8. Menjalankan django lokal server dan menampilkan django pada web browser](https://github.com/gurnitha/django-e-shopper/commit/2aaff75c76c3e61e6b1431f0c719a4098f30c053)
 
         > python manage.py runserver
         > http://127.0.0.1:8000/
 
 
-#### 9. Membuat halo world
+#### [9. Membuat halo world](https://github.com/gurnitha/django-e-shopper/commit/880d598770c6efccaf282e9f9466728c31573773)
 
         modified:   README.md
         new file:   app/main/urls.py
@@ -102,13 +102,13 @@
         : 'DIRS': ['templates'],
 
 
-#### 10. Mengisi html template pada home page
+#### [10. Mengisi html template pada home page](https://github.com/gurnitha/django-e-shopper/commit/743cd7b51c0e8f298e2d13bac1e89adc9b906e53)
 
         modified:   README.md
         modified:   templates/app/main/index.html
 
 
-#### 11. Mengisi assets (css,js,images,fonts)
+#### [11. Mengisi assets (css,js,images,fonts)](https://github.com/gurnitha/django-e-shopper/commit/52a5c9f2c2e6f25a5e972d812d372171ca0531e7)
 
         modified:   .gitignore
         modified:   README.md
@@ -116,7 +116,7 @@
         : static
 
 
-#### 12. Membuat path untuk static_root dan staticfiles_dir
+#### [12. Membuat path untuk static_root dan staticfiles_dir](https://github.com/gurnitha/django-e-shopper/commit/200d75bd79586e807a56f423ec8774e6a898bd2f)
 
         modified:   README.md
         modified:   config/settings.py
@@ -128,7 +128,7 @@
           ]
 
 
-#### 13. Loding static files
+#### [13. Loding static files]()
 
         modified:   README.md
         modified:   config/settings.py
@@ -140,27 +140,27 @@
           ]
 
 
-#### 14. Membuat base.html file
+#### [14. Membuat base.html file](https://github.com/gurnitha/django-e-shopper/commit/dbda67ddb82fd4dee0b628f3c8491107d5b5f4df)
 
         modified:   README.md
         modified:   templates/app/main/index.html
         new file:   templates/base.html
 
 
-#### 15. Memindahkan html template dari index.html ke base.html
+#### [15. Memindahkan html template dari index.html ke base.html](https://github.com/gurnitha/django-e-shopper/commit/3e47cf74544e160da0f20a0631ed8feee88a74db)
 
         modified:   README.md
         modified:   templates/app/main/index.html
         new file:   templates/base.html
 
 
-#### 16. Meng-extends base.html ke index.html
+#### [16. Meng-extends base.html ke index.html](https://github.com/gurnitha/django-e-shopper/commit/8cb86bdb0b6ec15b5736511fc2a57636940f09ed)
 
         modified:   README.md
         modified:   templates/app/main/index.html
 
 
-#### 17. Men-sagmentasi base.html template dan template inheritance
+#### [17. Men-sagmentasi base.html template dan template inheritance](https://github.com/gurnitha/django-e-shopper/commit/603d1a26d5be97894f5acd9cb0e27dc48fbde79e)
 
         modified:   README.md
         new file:   templates/app/main/components/content.html
@@ -172,7 +172,7 @@
         new file:   templates/partials/_scripts.html
 
 
-#### 18. Men-sagmentasi content index.html
+#### [18. Men-sagmentasi content index.html](https://github.com/gurnitha/django-e-shopper/commit/92c4e71dd64938632d668aa1eb13cd95ad12ff45)
 
         modified:   README.md
         new file:   templates/app/main/components/brands_products.html
@@ -187,14 +187,14 @@
         modified:   templates/base.html
 
 
-#### 19. Membuat page title
+#### [19. Membuat page title](https://github.com/gurnitha/django-e-shopper/commit/534e7a2a4c24889f2c6ba56b49966abea4708d8e)
 
         modified:   README.md
         modified:   templates/app/main/index.html
         modified:   templates/base.html
 
 
-#### 20. Database - Create MySQL database
+#### [20. Database - Create MySQL database](https://github.com/gurnitha/django-e-shopper/commit/93538aecae7b37970879b0bb8385451a0f39e45b)
 
         λ mysql -u root -p
         Enter password: ****
@@ -1127,3 +1127,6 @@
         modified:   app/order/models.py
         new file:   media/uploads/order/images/product6.jpg
         new file:   media/uploads/order/images/product6_L9Du4Ns.jpg
+
+
+#### HOUSE KEPPING - Modifikasi README.md file
